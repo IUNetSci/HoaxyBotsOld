@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "",
+    "text": "<a href='www.onurvarol.com'>Onur Varol</a>"
+  },
+  "text": {
+    "more": "Analysis of RT cascade of <a href='https://www.infowars.com/spirit-cooking-clinton-campaign-chairman-invited-to-bizarre-satanic-performance/' target='_blank'>this news",
+    "intro": "Analysis of RT cascade of <a href='https://www.infowars.com/spirit-cooking-clinton-campaign-chairman-invited-to-bizarre-satanic-performance/' target='_blank'>this news",
+    "title": "OSOME<br/><a href='http://hoaxy.iuni.iu.edu/'>Hoaxy</a>-<a href='https://botometer.iuni.iu.edu/'>Botometer</a> mashup"
+  },
+  "legend": {
+    "edgeLabel": "Retweet count",
+    "colorLabel": "<a href='https://botometer.iuni.iu.edu/'>Botometer</a> Score",
+    "nodeLabel": "Twitter Accounts"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "default"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": true,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
