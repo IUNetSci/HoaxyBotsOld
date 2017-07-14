@@ -1,4 +1,4 @@
-userID	username	All	User	Friend	Network	Content	Sentiment	Temporal	LanguageAgnostic
+Id	username	All	User	Friend	Network	Content	Sentiment	Temporal	LanguageAgnostic
 1426710036		0.45	0.63	0.4	0.49	0.52	0.38	0.32	0.49	
 2210025992		0.34	0.34	0.38	0.23	0.32	0.5	0.39	0.28	
 237730551		0.49	0.33	0.45	0.49	0.46	0.75	0.54	0.38	
