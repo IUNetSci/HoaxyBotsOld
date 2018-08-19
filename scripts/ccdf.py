@@ -1,5 +1,12 @@
-import pandas as pd
+# -*- coding: utf-8 -*-
+""" Function that implement Complement the Complementary Cumulative
+Distribution Function (CCDF).
+"""
+#
+# written by Chengcheng Shao <sccotte@gmail.com>
+
 import numpy as np
+import pandas as pd
 
 
 def ccdf(s):

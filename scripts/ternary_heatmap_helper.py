@@ -1,7 +1,14 @@
-from ternary.helpers import simplex_iterator
-import matplotlib.pyplot as plt
+# -*- coding: utf-8 -*-
+""" A helper function to ternary plot.
+"""
+#
+# written by Chengcheng Shao <sccotte@gmail.com>
+
 import matplotlib as mpl
+import matplotlib.pyplot as plt
 import numpy as np
+
+from ternary.helpers import simplex_iterator
 
 
 def heatmap_density(X, Y, Z, scale, boundary=True):
@@ -21,7 +28,10 @@ def heatmap_density(X, Y, Z, scale, boundary=True):
     return data
 
 
-def colorbar_hack(ax, vmin, vmax, cmap,
+def colorbar_hack(ax,
+                  vmin,
+                  vmax,
+                  cmap,
                   log_norm=False,
                   scientific=False,
                   cbarlabel=None):

@@ -540,7 +540,6 @@ def assign_segregated_groups(df, ngroups=3):
     df['gn'] = -1
     windows = []
     left = 0
-    n = len(df)
     df = df.reset_index(drop=True)
     for i in range(ngroups):
         cur_p = (i + 1) * g_size
@@ -664,11 +663,11 @@ def m4_bots_retweeter_and_tweeter(fn='M4_retweeter_and_tweeter.csv',
     X1 = xedges[:-1] + np.true_divide(xedges[1:] - xedges[:-1], 2)
     Y1 = df.sum(axis=1) / df.sum(axis=1).sum()
     # X2, Y2, vertical curve
-    df2 = df.iloc[:int(0.4*nbins)]
+    df2 = df.iloc[:int(0.4 * nbins)]
     X21 = df2.sum(axis=0) / df.sum(axis=0).sum()
-    df2 = df.iloc[:int(0.5*nbins)]
+    df2 = df.iloc[:int(0.5 * nbins)]
     X22 = df2.sum(axis=0) / df.sum(axis=0).sum()
-    df2 = df.iloc[:int(0.6*nbins)]
+    df2 = df.iloc[:int(0.6 * nbins)]
     X23 = df2.sum(axis=0) / df.sum(axis=0).sum()
     Y2 = X1
     # X3, Y3, heatmap
@@ -1178,19 +1177,19 @@ def s10_bots_of_users(fn1='S10_top1000_users.lc.csv',
     """
     Caption in the supplementary paper:
     --------------------------
-    Supplementary Figure 10: Bot score distributions for super-spreaders s. 
-    randomly selected sharers of links to low-credibility sources selecte by 
-    the consensus criterion. The random sample includes 992 accounts who osted 
-    at least one link to an article from a low-credibility source. Their ot 
-    scores are compared to 997 accounts that most actively share such lins. 
+    Supplementary Figure 10: Bot score distributions for super-spreaders v.s.
+    randomly selected sharers of links to low-credibility sources selected by
+    the consensus criterion. The random sample includes 992 accounts who posted
+    at least one link to an article from a low-credibility source. Their bot
+    scores are compared to 997 accounts that most actively share such links
     The two groups have significant different socres (p<10e-4 according to
     a Mann-Whitney U test).
 
     Input data and instructions:
     ----------------------------
-    `fn1`: the top 1000 most active accounts that share tweets with links to 
+    `fn1`: the top 1000 most active accounts that share tweets with links to
     low-credibility sources,
-    `fn2`: the random sampled 1000 accounts that share tweets with links to 
+    `fn2`: the random sampled 1000 accounts that share tweets with links to
     low-credibility sources,
     `fn3`: bot score for the accounts.
     """
@@ -1272,14 +1271,14 @@ def s11_bots_in_first_hour_spreading_violin(
     Caption in the supplementary paper:
     --------------------------
     Supplementary Figure 11: Temporal evolution of bot support after the first
-    share of a viral story from a consensus low-credibility source. We considr 
+    share of a viral story from a consensus low-credibility source. We consider
     a random sample of 20,000 accounts out of the 163,563 accounts that
-    participate in the spread of the 1,000 most viral articles. After rticles 
-    from The Onion are excluded, we are left with 42,202 tweets from 1,926 
-    accounts. We align the times when each link first appears. We focu on a 
-    one-hour early spreading phase following each of these events, anddivide 
+    participate in the spread of the 1,000 most viral articles. After articles
+    from The Onion are excluded, we are left with 42,202 tweets from 13,926
+    accounts. We align the times when each link first appears. We focus on a
+    one-hour early spreading phase following each of these events, and divide
     it into logarithmic lag intervals. The plot shows the bot score
-    distribution for accounts sharing the links during each of thee lag 
+    distribution for accounts sharing the links during each of thee lag
     intervals.
 
     Input data and instructions:
